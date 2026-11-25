@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 2 - Colores aleatorios</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+  <script>
+    function setup() {
+      createCanvas(800, 800);
+      background(0,253,105);
+      strokeWeight(4);
+
+
+      // Cada lado recibe un color aleatorio.
+      stroke(random(255), random(255), random(255));
+      line(100, 100, 150, 150);
+   
+      line(150, 150,200, 100);
+
+
+      
+      line(100, 100, 100, 300);
+
+
+     
+      line(200, 100, 200, 300);
+
+      stroke(random(255), random(255), random(255));
+      line(250, 100, 250, 300);
+      
+      
+      line(250, 100,350, 100);
+      
+      
+      line(350, 100, 350, 180);
+
+     
+      line(350, 180, 250, 180)
+      
+      stroke(random(255), random(255), random(255));
+      line(400, 100, 400, 300);
+      
+      
+      line(400, 100,500, 100);
+      
+      
+      line(400, 300, 500, 300);
+
+    }
+  </script>
+</body>
+</html>

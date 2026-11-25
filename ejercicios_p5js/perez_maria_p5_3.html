@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 3 - Figuras y rellenos</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+<script>
+function setup() {
+  createCanvas(400, 400);
+  background(200);  // Fondo blanco
+
+//casa
+  fill(150, 115, 255);
+  rect(50, 200, 300, 170);
+//prao
+  fill(0, 115, 0);
+  rect(0, 370,400 , 30);
+
+//puerta
+  stroke(185, 125, 100);
+  strokeWeight(4);
+  fill(150, 145, 90);
+  rect(150, 270, 75, 100);
+
+//ventana izquierda
+  fill(0, 180, 2550);
+  rect(65, 215, 70, 80);
+
+// ventana derecha
+  fill(50, 180, 2550);
+  rect(240, 215, 70, 80);
+
+//lineas ventana izquierda
+line(100,215,100,295)
+line(65,250,135,250)
+
+//lineas ventana derecha
+line(275,215,275,295)
+line(240,250,310,250)
+
+//tejado
+fill(255, 0, 0,120);
+triangle(190, 100, 50, 200, 350, 200);
+
+
+
+
+
+
+ 
+
+}
+</script>
+</body>
+</html>

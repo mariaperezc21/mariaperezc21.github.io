@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 6 - Mi póster</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+<script>
+function setup() {
+  createCanvas(800,500);  // Tamaño inicial del lienzo
+  background(255,188,217);
+  noStroke();
+
+
+  // Título situado en el centro horizontal (640 / 2 = 320).
+  textSize(28);
+  textAlign(CENTER, TOP);
+  fill(143,0,255);
+  text("Gimnasía rítmica", 320, 16);
+
+
+  // Subtítulo: sigue centrado en x = 320.
+  textSize(16);
+  fill(255,110,199);
+  text("Conbinación de gimnasia,ballet,danza y aparatos", 320, 52);
+
+
+  // Etiquetas próximas a las cuatro esquinas.
+  textSize(12);
+  fill(0);
+  textAlign(LEFT, TOP);
+  text("(0, 0)", 6, 6);
+
+
+  textAlign(RIGHT, TOP);
+  text("(640, 0)", 634, 6);
+
+
+  textAlign(LEFT, BOTTOM);
+  text("(0, 360)", 6, 354);
+
+
+  textAlign(RIGHT, BOTTOM);
+  text("(640, 360)", 634, 354);
+
+
+  // Centro geométrico indicado con números fijos.
+  textAlign(CENTER, CENTER);
+  textSize(12);
+  fill(30);
+  text("Centro (320, 180)", 320, 180);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Practica 5.7</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+
+<script>
+function setup() {
+  createCanvas(300, 200);
+}
+
+function draw() {
+  background(255);
+
+  // Variables que dependen del tamaño del lienzo
+  let centroX = width / 2;
+  let centroY = height / 2;
+  let tamCara = min(width, height) * 0.75;
+
+  // Cara amarilla
+  fill(255, 255, 0);
+  stroke(0);
+  circle(centroX, centroY, tamCara);
+
+  // Ojos
+  fill(0);
+  noStroke();
+  circle(centroX - tamCara * 0.25, centroY - tamCara * 0.17, tamCara * 0.13);
+  circle(centroX + tamCara * 0.25, centroY - tamCara * 0.17, tamCara * 0.13);
+
+  // Sonrisa
+  noFill();
+  stroke(0);
+  strokeWeight(tamCara * 0.01);
+  arc(centroX, centroY + tamCara * 0.12,
+      tamCara * 0.52, tamCara * 0.22, 0, PI);
+
+  // Cejas
+  arc(centroX - tamCara * 0.25, centroY - tamCara * 0.30,
+      tamCara * 0.16, tamCara * 0.09, PI, TWO_PI);
+
+  arc(centroX + tamCara * 0.25, centroY - tamCara * 0.30,
+      tamCara * 0.16, tamCara * 0.09, PI, TWO_PI);
+}
+</script>
+
+</body>
+</html>
